@@ -1,5 +1,14 @@
+/*
+steps:
+1. create a synchronized method
+2. create multiple threads accessing synchronized method
+3. start threads
+
+*/
+
+
 class ThreadOps{  
-void ops(){  
+synchronized  void ops(){  
    for(int i=1;i<=5;i++){  
      System.out.println(Thread.currentThread().getName()+" ("+i+")");
      try{  
